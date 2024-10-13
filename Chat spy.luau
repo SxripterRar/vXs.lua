@@ -9,7 +9,7 @@ public = false
 publicItalics = true
 --customize private logs
 privateProperties = {
-	Color = Color3.fromRGB(0,255,128); 
+	Color = Color3.fromRGB(127,0,255); 
 	Font = Enum.Font.SourceSansBold;
 	TextSize = 15;
 }
@@ -41,7 +41,7 @@ local function onChatted(p,msg)
 			conn:Disconnect()
 			if hidden and enabled then
 				if public then
-					saymsg:FireServer((publicItalics and "/me " or '').."{SPY} [".. p.Name .."]: "..msg,"All")
+					saymsg:FireServer((publicItalics and "/me " or '').."{SPY} [".. p.DisplayName .."]: "..msg,"All")
 				else
 					privateProperties.Text = "{SPY} [".. p.DisplayName .."]: "..msg
 					StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
