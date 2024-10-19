@@ -1,16 +1,14 @@
---This script reveals ALL hidden messages in the default chat
---chat "/spy" to toggle!
-enabled = true
---if true will check your messages too
+enabled = true -- sure enabled
+
 spyOnMyself = false
---if true will chat the logs publicly (fun, risky)
+
 public = false
---if true will use /me to stand out
+
 publicItalics = true
---customize private logs
+
 privateProperties = {
 	Color = Color3.fromRGB(0,255,255); 
-	Font = Enum.Font.SourceSansBold;
+	Font = Enum.Font.FredokaOne;
 	TextSize = 15;
 }
 --////////////////////////////////////////////////////////////////
@@ -62,4 +60,3 @@ StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
 local chatFrame = player.PlayerGui.Chat.Frame
 chatFrame.ChatChannelParentFrame.Visible = true
 chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
---Credit to O Plays on Youtube, go subscribe to him (not my account, just advertising for him, we don't even know eachother lol)
