@@ -4,7 +4,7 @@ spyOnMyself = false
 
 public = false
 
-publicItalics = true
+publicItalics = false
 
 privateProperties = {
 	Color = Color3.fromRGB(0,255,255); 
