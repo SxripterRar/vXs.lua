@@ -1,0 +1,106 @@
+game:GetService("StarterGui"):SetCore("SendNotification",      {
+       Title = "Raider Notify",
+       Text = "raider loaded. Theme: Serpent",
+       Icon = "rbxassetid://7733973479",
+       Duration = 5
+})
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Nick-s-Modded-KAVO-Lib/main/Nick'sModdedKavoLib.lua"))()
+local Window = Library.CreateLib("Quantum XV | SERVER RAIDER", "Serpent")
+
+-- Tabs
+
+local Tab1 = Window:NewTab("Main")
+local Tab1Section = Tab1:NewSection("Main Section") -- Define Tab1Section here
+
+Tab1Section:NewButton("Reset Character", "die die. DIE DIE.", function()
+    -- script totally here
+    local player = game.Players.LocalPlayer
+
+    local function dieMyCharacter()
+        local character = player.Character
+        if character then
+            local human = character:FindFirstChild("Humanoid")
+            if human then
+                humanoid.Health = 0
+            end
+        end
+    end
+
+    local triggerCondition = true
+
+    if triggerCondition then
+        dieMyCharacter()
+    end
+end)
+
+Tab1Section:NewButton("Anti Mute Gui ( NOT MINE )", "why u click this?", function()
+    -- script here
+game.StarterGui:SetCore ("SendNotification",   {
+Title = "CREDITS!";
+Text =  "Made by cheez fin dark";
+Duration = "5";
+loadstring(game:HttpGet('https://github.com/SxripterRar/vXs.lua/blob/main/BRENDA%20SHUT%20UP?raw=true'))()
+})
+
+end)
+
+Tab1Section:NewButton("Spam raid chat", "why u click this?", function()
+    -- script here
+    loadstring(game:HttpGet("https://github.com/SxripterRar/vXs.lua/blob/main/spam.lua?raw=true"))()
+end)
+
+Tab1Section:NewButton("Unspam raid chat", "why did u click ?", function()
+-- script here
+    loopRunning = false
+end)
+
+Tab1Section:NewButton("Fling all Anthonyisnthere", "why u click this", function()
+    -- script here
+    loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
+end)
+
+Tab1Section:NewButton("Loopfling all", "why did u click ?", function()
+    -- script here
+    fling = true
+    
+    while fling do
+    loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
+    wait(1)
+end
+end)
+
+Tab1Section:NewButton("Unloopfling all", "why did u click ?", function()
+-- script here
+    fling = false
+end)
+
+local Tab1Section2 = Tab1:NewSection("DANGEROUS SECTION (RISK)") -- Create a new section for the last button
+Tab1Section2:NewButton("All in one.", "why u click", function()
+    -- script here
+    local i = 1
+    while i <= 100 do
+        loadstring(game:HttpGet("https://github.com/SxripterRar/vXs.lua/blob/main/spam.lua?raw=true"))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
+        i = i + 1
+    end
+end)
+
+local Tab2 = Window:NewTab("Extra(s)")
+local Tab2Section = Tab2:NewSection("Extra(s)")
+Tab2Section:NewButton("INFINITE YIELD", "why u click this", function()
+    -- script here
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Tab2Section:NewButton("NAMELESS ADMIN", "why u click this", function()
+-- script here
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source"))()
+end)
+
+local Tab3 = Window:NewTab("Credits")
+local Tab3Section = Tab3:NewSection("Made by FlavorYT.")
+local Tab3Section = Tab3:NewSection("Subscribe for more script like this.")
+local Tab3Section = Tab3:NewSection("DM 12PT#8260 IF BUGS/GLITCHES.")
+local Tab3Section = Tab3:NewSection("CREDITS TO THE OWNER OF CHAT GUI AND FLING.") 
