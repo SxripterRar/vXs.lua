@@ -1,12 +1,15 @@
--- [[what do you think??? Im just testing scripts here]]
-local 24 = 
-game.Workspace:FindFirstChild("whoareyiu24")
-if 24 then
-   print("Hello!")
-else
-   print("Bye!")
-task.wait(1+2)
-elseif not 24 then
-   Game.Players.LocalPlayer:Kick("test")
-   end
-end
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("slippery 100 players")
+
+local KillingCheats = PhantomForcesWindow:NewSection("k")
+KillingCheats:CreateButton("Auto shietld", function(value)
+while wait(30) do
+   game:GetService("ReplicatedStorage").Remotes.FromClient.ShopPurchase:FireServer({["name"] = "Shield",["price"] = 125})
+      end
+end)
+KillingCheats:CreateButton("Auto swing", function(value)
+while wait() do 
+         game:GetService("ReplicatedStorage").Remotes.FromClient.SwordSwing:FireServer()
+      end
+end)
