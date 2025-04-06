@@ -25,6 +25,9 @@ barke = state
         wait(0.0001)
          game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(35.9515839, 4.04425049, 53.7821503, 0, 0, -1, 0, 1, 0, 1, 0, 0)
       end 
+   if barke = false then
+      game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(-32.3174286, 99.5898972, -8.1511097, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+      end
 end)
 
 Tab2:CreateButton("Nameless Admin", function()
