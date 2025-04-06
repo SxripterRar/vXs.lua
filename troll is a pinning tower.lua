@@ -1,4 +1,4 @@
-`-- CREDITS TO RAR.EXE
+-- CREDITS TO RAR.EXE
 
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 local Window = Library:NewWindow("Troll Is A Pinning Tower")
