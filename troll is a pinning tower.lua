@@ -8,7 +8,7 @@ local Tab2 = Window:NewSection("Misc.")
 local Tab3 = Window:NewSection("CREDITS TO RAR.")
 -- script
 Tab1:CreateButton("Teleport to end", function()
-   game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(302.850647, 338.706787, -6.88173676, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+   game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(302.850647, 338.706790, -6.88173676, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 end)
 Tab1:CreateButton("Teleport to Spawn", function()
    game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(35.9515839, 4.04425049, 53.7821503, 0, 0, -1, 0, 1, 0, 1, 0, 0)
