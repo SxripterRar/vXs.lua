@@ -16,9 +16,9 @@ end)
 Tab1:CreateToggle("Troll Pads", function(value)
 while value do 
                   game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(-34.8450928, 99.5898972, 10.8118877, 0, 0, -1, 0, 1, 0, 1, 0, 0)
-        wait(0.1)
+        wait(0.0001)
                   game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(-34.8450928, 99.5899734, 24.9667969, 0, 0, -1, 0, 1, 0, 1, 0, 0)
-        wait(0.2)
+        wait(0.001)
                   game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(-34.8450928, 99.5898972, 38.1106415, 0, 0, -1, 0, 1, 0, 1, 0, 0)
        end
 end)
